@@ -32,12 +32,12 @@ java {
 repositories {
 	mavenCentral()
 	mavenLocal()
-	maven { url = uri("https://maven.meteordev.org/releases") }
-	maven { url = uri("https://maven.meteordev.org/snapshots") }
-	maven { url = uri("https://maven.seedfinding.com/") }
-	maven { url = uri("https://maven-snapshots.seedfinding.com/") }
-	maven { url = uri("https://jitpack.io") }
-	maven { url = uri("https://maven.duti.dev/releases") }
+	maven("https://maven.meteordev.org/releases")
+	maven("https://maven.meteordev.org/snapshots")
+	maven("https://maven.seedfinding.com/")
+	maven("https://maven-snapshots.seedfinding.com/")
+	maven("https://jitpack.io")
+	maven("https://maven.duti.dev/releases")
 }
 
 val extraLibs: Configuration by configurations.creating
